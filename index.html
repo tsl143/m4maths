@@ -13,7 +13,7 @@
 M4Maths
 </header>
 <div data-role="page" id="homepage" class="active">
-    <input type="text" placeholder="Player Name"/>
+    <input type="text" placeholder="Player Name" id="player"/>
     
 	<section  class="tabs" onclick="rockit('easy')">
 	EASY
@@ -26,12 +26,13 @@ M4Maths
 	</section>
 </div>
 <div data-role="page" id="question">
-    <section id="problem"></section>
+    <section id="problem" class="tabs"></section>
     <section id="options">
-        <div id="opt1" class="answer"></div>
-        <div id="opt2" class="answer"></div>
-        <div id="result"></div>
+        <div id="opt1" class="answer tabs"></div>
+        <div id="opt2" class="answer tabs"></div>
+        <div id="timer"></div>
     </section>
 </div>
+<div data-role="page" id="result"></div>    
 </body>
 </html>

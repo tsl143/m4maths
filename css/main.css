@@ -1,2 +1,19 @@
-[data-role="page"]{display:none;}
+body{margin:0px;}
+header{   background: none repeat scroll 0 0 #D74B4B;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    padding-top: 20px;
+    text-align: center;}
+[data-role="page"]{display:none;padding:10px;}
 .active{display:block;}
+#homepage input[type="text"]{padding:10px;margin:10px auto;display: block;}
+.tabs{background: none repeat scroll 0 0 #530031;
+    color: #FFFFFF;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    width: auto;}
+#problem{background-color: #530031;}
+#result .tabs b{text-transform: uppercase;}
