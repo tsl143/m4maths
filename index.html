@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Stay FIT</title>
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/main.js"></script>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<SCRIPT>
+		
+</SCRIPT>
+</head>
+<body>
+<header>
+M4Maths
+</header>
+<div data-role="page" id="homepage" class="active">
+    <input type="text" placeholder="Player Name"/>
+    
+	<section  class="tabs" onclick="rockit('easy')">
+	EASY
+	</section>	
+	<section class="tabs" onclick="rockit('normal')">
+	NORMAL
+	</section>	
+        <section class="tabs" onclick="rockit('hard')"> 
+	EXPERT
+	</section>
+</div>
+<div data-role="page" id="question">
+    <section id="problem"></section>
+    <section id="options">
+        <div id="opt1" class="answer"></div>
+        <div id="opt2" class="answer"></div>
+        <div id="result"></div>
+    </section>
+</div>
+</body>
+</html>
