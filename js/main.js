@@ -39,7 +39,7 @@ function easy(type)
     opr4=Math.floor((Math.random())*10);
     while(!opr2){opr2=Math.floor((Math.random())*10);}
     while(!opr3){opr3=Math.floor((Math.random())*10);}
-    while(!opr3){opr4=Math.floor((Math.random())*10);}
+    while(!opr4){opr4=Math.floor((Math.random())*10);}
     oprfalse=Math.floor((Math.random())*10);
     while(opr1==oprfalse){oprfalse=Math.floor((Math.random())*10);}
     oprind=Math.floor((Math.random())*10);
