@@ -1,4 +1,4 @@
-var score=0;
+var score=0;flag=false;
 var src=['+','-','*','/','+','-','*','*','+','-'];
 var i,player_name;
 $(document).ready(function(){
@@ -11,12 +11,15 @@ $(document).ready(function(){
         homesweethome();
     });
     $('.answer').click(function(){
-        $('.answer').css({'background-color':'red'});
-            $('.right').css({'background-color':'green'});
+								if (!flag){
+        $('.answer').css({'background':'url(img/wrong.png) no-repeat right center #F0A74F'});
+            $('.right').css({'background':'url(img/right.png) no-repeat right center #F0A74F'});
         if ($(this).hasClass('right')){
             score++;
             
         }
+		flag=true;
+								}
     });
 });
 
@@ -30,7 +33,8 @@ function rockit(type){
    }
 function fillit(type)
 {
-    $('.answer').css({'background-color':'#09455C'});
+	flag=false;
+    $('.answer').css({'background':'#F0A74F'});
     $('.right').removeClass('right');
     opr1=Math.floor((Math.random())*10);
     opr2=Math.floor((Math.random())*10);
@@ -67,7 +71,7 @@ function fillit(type)
 
 function resulttime(type){
     clearInterval(itseasy);
-    $("#result").html('<div class="tabs">Hi <b>'+player_name+'</b>, Score for <b>'+type+'</b> level is</div><div class="tabs">'+score+'</div>');
+    $("#result").html('<div class="tabs">Hi <b>'+player_name+'</b>, Score for <b>'+type+'</b> level is</div><span class="badge">'+score+'</span><img src="img/result.gif"/>');
     $('[data-role="page"]').hide();
     $('#result').slideDown();
     score=0;
